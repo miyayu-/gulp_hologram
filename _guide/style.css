@@ -1,0 +1,94 @@
+/*doc
+---
+title: ページャー
+name: pager
+category: guide
+---
+
+ページャーの基本スタイル。
+
+```html_example
+<ul class="pager">
+<li class="pager__item"><a class="pager__nav pager__nav-none" href="">&lt;</a></li>
+<li class="pager__item"><a class="pager__nav" href="">1</a></li>
+<li class="pager__item"><span class="pager__nav pager__nav-current">2</span></li>
+<li class="pager__item"><a class="pager__nav" href="">3</a></li>
+<li class="pager__item"><a class="pager__nav" href="">4</a></li>
+<li class="pager__item"><a class="pager__nav pager__nav-none" href="">&gt;</a></li>
+</ul>
+```
+
+*/
+
+/* Base pager */
+.pager {
+  background: #fff;
+  text-align: center;
+}
+.pager__item {
+  display: inline-block;
+  margin: 0 5px;
+}
+.pager__nav {
+  display: block;
+  padding: 10px;
+  border: 1px solid #ccc;
+  line-height: 1;
+  -webkit-transition: .15s ease-in;
+          transition: .15s ease-in;
+}
+.pager__nav:hover {
+  background: #ccc;
+}
+.pager__nav-current {
+  background: #ccc;
+  -webkit-transition: none;
+          transition: none;
+}
+.pager__nav-none {
+  display: inline-block;
+  padding: 0;
+  border: none;
+  font-size: 16px;
+  -webkit-transition: none;
+          transition: none;
+}
+.pager__nav-none:hover {
+  background: none;
+}
+
+
+/*doc
+---
+title: ボタン
+name: button
+category: guide
+---
+
+ボタンの基本スタイル。
+
+
+```html_example
+<p class="btn"><a href="">基本ボタン</a></p>
+```
+
+*/
+
+/* Base btn */
+.btn {
+  width: 180px;
+  margin: 0 auto;
+  border: 1px solid #000;
+  background: #fff;
+  text-align: center;
+  box-sizing: border-box;
+}
+.btn a {
+  display: block;
+  padding: 15px 25px;
+  -webkit-transition: .15s ease-in;
+          transition: .15s ease-in;
+}
+.btn a:hover {
+  background: #ccc;
+}
